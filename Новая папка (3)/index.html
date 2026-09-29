@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <meta name="kombai-design-canvas" content="true">
+  
+  
+  
+  <script src="https://unpkg.com/@tailwindcss/browser@4.3.3/dist/index.global.js" integrity="sha384-2ql948lIdLcGEE0/qxNiudyTjgauA3RDJERu5xW75kFCvSl5a9odyQYCb6tEjnmB" crossorigin="anonymous"></script>
+  
+  <style>html, body { margin: 0; padding: 0; } #root { display: contents; }</style>
+</head><body>
+  <div id="root"><style>
+    @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,700;1,7..72,400;1,7..72,500&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.35.0/dist/tabler-icons.min.css');
+.f-d{font-family:'Yanone Kaffeesatz',sans-serif}
+.f-b{font-family:'Literata',serif}
+.paper{background-color:#DEDBD4;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.14 0 0 0 0 0.14 0 0 0 0 0.14 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.sheet{background-color:#E8E5DE;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.15 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse at 90% 10%,rgba(140,95,50,.14),transparent 45%)}
+.perf{border-top:2px dotted #232424}
+.stub{position:relative;background:#E8E5DE}
+.stub::before,.stub::after{content:"";position:absolute;top:50%;width:26px;height:26px;border-radius:50%;background:#DEDBD4;transform:translateY(-50%)}
+.stub::before{left:-13px}.stub::after{right:-13px}
+.reg{position:absolute;width:14px;height:14px;border:1.5px solid #232424;border-radius:50%}
+.reg::before,.reg::after{content:"";position:absolute;background:#232424}
+.reg::before{left:50%;top:-5px;bottom:-5px;width:1.5px;transform:translateX(-50%)}
+.reg::after{top:50%;left:-5px;right:-5px;height:1.5px;transform:translateY(-50%)}
+.barcode{background:repeating-linear-gradient(90deg,#232424 0 2px,transparent 2px 4px,#232424 4px 5px,transparent 5px 8px,#232424 8px 11px,transparent 11px 12px)}
+.row-rule{border-bottom:1px solid rgba(35,36,36,.25)}
+</style>
+<div class="paper f-b text-[#232424] antialiased" data-kid="1">
+    <!-- MASTHEAD -->
+    <header class="px-14 pt-8" data-kid="1-1">
+        <div class="flex items-center justify-between text-[13px] f-d uppercase tracking-[0.2em] text-[18px]" data-kid="1-1-1">
+            <span data-dynamic="true" data-kid="1-1-1-1" data-name="current date display" data-reason="text set by script based on current time" id="v2-date">
+                Термез · сегодня
+            </span>
+            <nav class="flex gap-8" data-kid="1-1-1-2">
+                <a class="hover:text-[#A50F14]" data-kid="1-1-1-2-1" href="#v2-menu">
+                    Меню
+                </a>
+                <a class="hover:text-[#A50F14]" data-kid="1-1-1-2-2" href="#v2-about">
+                    О нас
+                </a>
+                <a class="hover:text-[#A50F14]" data-kid="1-1-1-2-3" href="#v2-gallery">
+                    Фото
+                </a>
+                <a class="hover:text-[#A50F14]" data-kid="1-1-1-2-4" href="#v2-reviews">
+                    Отзывы
+                </a>
+                <a class="hover:text-[#A50F14]" data-kid="1-1-1-2-5" href="#v2-contacts">
+                    Контакты
+                </a>
+            </nav>
+            <a class="flex items-center gap-2" data-kid="1-1-1-3" href="tel:+998907479037">
+                <i class="ti ti-phone" data-kid="1-1-1-3-1">
+                </i>
+                90 747 90 37
+            </a>
+        </div>
+        <div class="border-t-[3px] border-b border-[#232424] mt-4 py-5 flex items-center justify-center gap-8" data-kid="1-1-2">
+            <img alt="Логотип Coffeemania" class="w-[92px] h-[92px] rounded-full" data-kid="1-1-2-1" decoding="async" loading="lazy" src="file:///c:/Users/hamid/Desktop/Coffeemania/469584110_1328742354962589_7238062258581247996_n.jpg"/>
+            <p class="f-d font-bold uppercase text-[110px] leading-[0.8] tracking-tight" data-kid="1-1-2-2">
+                Coffeemania
+            </p>
+            <div class="stub w-[190px] px-6 py-3 text-center" data-kid="1-1-2-3">
+                <p class="f-d uppercase tracking-[0.2em] text-[15px]" data-kid="1-1-2-3-1" id="v2-stub-sub">
+                    Сейчас
+                </p>
+                <p class="f-d font-bold uppercase text-[40px] leading-none text-[#EB2A2A]" data-dynamic="true" data-kid="1-1-2-3-2" data-name="cafe status indicator text" data-reason="text set to 'Открыто' or 'Закрыто' by script" id="v2-stub-word">
+                    Открыто
+                </p>
+                <p class="text-[13px] mt-1" data-dynamic="true" data-kid="1-1-2-3-3" data-name="cafe status detail text" data-reason="text updated by script to indicate closing/opening time" id="v2-stub-note">
+                    до 03:00
+                </p>
+            </div>
+        </div>
+        <div class="border-b border-[#232424] h-[3px] mt-[3px]" data-kid="1-1-3">
+        </div>
+    </header>
+    <!-- HERO newspaper -->
+    <section class="px-14 pt-12 pb-16 grid grid-cols-[1.25fr_1fr] gap-14" data-kid="1-2">
+        <div data-kid="1-2-1">
+            <p class="f-d uppercase tracking-[0.25em] text-[18px] text-[#A50F14]" data-kid="1-2-1-1">
+                Главная новость центра Термеза
+            </p>
+            <h1 class="f-d font-bold text-[92px] leading-[0.88] mt-3" data-kid="1-2-1-2">
+                Эспрессо за 15 000 и кофе до трёх ночи
+            </h1>
+            <div class="mt-8 grid grid-cols-2 gap-8 text-[16px] leading-[1.7]" data-kid="1-2-1-3">
+                <p class="first-letter:f-d first-letter:text-[64px] first-letter:float-left first-letter:leading-[0.8] first-letter:mr-2 first-letter:font-bold" data-kid="1-2-1-3-1">
+                    Coffeemania работает каждый день и закрывается только в 03:00 — после концерта, поздней смены или долгого разговора всегда можно зайти за капучино.
+                </p>
+                <p data-kid="1-2-1-3-2">
+                    Днём здесь работают с ноутбуком за большими столами, вечером встречаются с друзьями. Средний чек — до 50 000 сум, а гости Google ставят кофейне 5.0 из 5.
+                </p>
+            </div>
+            <div class="mt-10 flex gap-4" data-kid="1-2-1-4">
+                <a class="bg-[#EB2A2A] hover:bg-[#c81f1f] text-[#232424] f-d uppercase text-[24px] tracking-wider px-8 py-3 rounded-full flex items-center gap-3" data-kid="1-2-1-4-1" href="tel:+998907479037">
+                    <i class="ti ti-phone-call text-[22px]" data-kid="1-2-1-4-1-1">
+                    </i>
+                    Позвонить
+                </a>
+                <a class="border-2 border-[#232424] hover:bg-[#232424] hover:text-[#DEDBD4] f-d uppercase text-[24px] tracking-wider px-8 py-3 rounded-full flex items-center gap-3" data-kid="1-2-1-4-2" href="https://maps.google.com/?q=67RJ+GQW,+Termiz" target="_blank">
+                    <i class="ti ti-route text-[22px]" data-kid="1-2-1-4-2-1">
+                    </i>
+                    Построить маршрут
+                </a>
+            </div>
+        </div>
+        <figure class="relative" data-kid="1-2-2">
+            <img alt="Светлый интерьер кафе — Ksenia Chernaya on Pexels" class="w-[480px] h-[480px] rounded-full object-cover ml-auto grayscale-[0.25]" data-kid="1-2-2-1" decoding="async" loading="lazy" src="https://images.pexels.com/photos/8535635/pexels-photo-8535635.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80"/>
+            <span class="reg top-2 left-6" data-kid="1-2-2-2">
+            </span>
+            <span class="reg bottom-10 right-0" data-kid="1-2-2-3">
+            </span>
+            <div class="absolute -bottom-2 left-4 w-[150px] h-[150px] rounded-full bg-[#EB2A2A] grid place-items-center text-center rotate-[-8deg]" data-kid="1-2-2-4">
+                <div data-kid="1-2-2-4-1">
+                    <p class="f-d font-bold text-[56px] leading-none" data-kid="1-2-2-4-1-1">
+                        5.0
+                    </p>
+                    <p class="f-d uppercase tracking-widest text-[15px]" data-kid="1-2-2-4-1-2">
+                        Google
+                    </p>
+                </div>
+            </div>
+            <figcaption class="text-[13px] italic text-right mt-4" data-kid="1-2-2-5">
+                Фото: зал днём. Иллюстрация, съёмка Coffeemania скоро.
+            </figcaption>
+        </figure>
+    </section>
+    <!-- TICKET info -->
+    <section class="px-14 pb-20" data-kid="1-3" id="v2-about">
+        <div class="max-w-[1100px] mx-auto" data-kid="1-3-1">
+            <div class="bg-[#232424] text-[#DEDBD4] px-10 py-6 flex items-center justify-between" data-kid="1-3-1-1">
+                <div data-kid="1-3-1-1-1">
+                    <p class="f-d uppercase tracking-[0.2em] text-[16px] opacity-70" data-kid="1-3-1-1-1-1">
+                        Отправление
+                    </p>
+                    <p class="f-d font-bold text-[52px] leading-none" data-kid="1-3-1-1-1-2">
+                        ЦЕНТР
+                    </p>
+                </div>
+                <div class="flex-1 mx-10 flex items-center gap-3" data-kid="1-3-1-1-2">
+                    <span class="flex-1 border-t-2 border-dashed border-[#DEDBD4]/50" data-kid="1-3-1-1-2-1">
+                    </span>
+                    <i class="ti ti-coffee text-[34px] text-[#EB2A2A]" data-kid="1-3-1-1-2-2">
+                    </i>
+                    <span class="flex-1 border-t-2 border-dashed border-[#DEDBD4]/50" data-kid="1-3-1-1-2-3">
+                    </span>
+                </div>
+                <div class="text-right" data-kid="1-3-1-1-3">
+                    <p class="f-d uppercase tracking-[0.2em] text-[16px] opacity-70" data-kid="1-3-1-1-3-1">
+                        Прибытие
+                    </p>
+                    <p class="f-d font-bold text-[52px] leading-none text-[#EB2A2A]" data-kid="1-3-1-1-3-2">
+                        COFFEEMANIA
+                    </p>
+                </div>
+            </div>
+            <div class="stub" data-kid="1-3-1-2">
+                <div class="perf mx-8" data-kid="1-3-1-2-1">
+                </div>
+                <div class="grid grid-cols-4 px-10 py-8 gap-8" data-kid="1-3-1-2-2">
+                    <div data-kid="1-3-1-2-2-1">
+                        <p class="f-d uppercase tracking-[0.2em] text-[16px] text-[#A50F14]" data-kid="1-3-1-2-2-1-1">
+                            Адрес
+                        </p>
+                        <p class="text-[17px] font-medium mt-1" data-kid="1-3-1-2-2-1-2">
+                            67RJ+GQW, Termiz, Surxondaryo Viloyati
+                        </p>
+                    </div>
+                    <div data-kid="1-3-1-2-2-2">
+                        <p class="f-d uppercase tracking-[0.2em] text-[16px] text-[#A50F14]" data-kid="1-3-1-2-2-2-1">
+                            Телефон
+                        </p>
+                        <a class="text-[17px] font-medium mt-1 block" data-kid="1-3-1-2-2-2-2" href="tel:+998907479037">
+                            90 747 90 37
+                        </a>
+                    </div>
+                    <div data-kid="1-3-1-2-2-3">
+                        <p class="f-d uppercase tracking-[0.2em] text-[16px] text-[#A50F14]" data-kid="1-3-1-2-2-3-1">
+                            Часы
+                        </p>
+                        <p class="text-[17px] font-medium mt-1" data-kid="1-3-1-2-2-3-2">
+                            Ежедневно 08:00–03:00
+                        </p>
+                    </div>
+                    <div data-kid="1-3-1-2-2-4">
+                        <p class="f-d uppercase tracking-[0.2em] text-[16px] text-[#A50F14]" data-kid="1-3-1-2-2-4-1">
+                            Средний чек
+                        </p>
+                        <p class="text-[17px] font-medium mt-1" data-kid="1-3-1-2-2-4-2">
+                            до 50 000 сум
+                        </p>
+                    </div>
+                </div>
+                <div class="px-10 pb-7 flex items-center gap-6" data-kid="1-3-1-2-3">
+                    <div class="barcode h-12 flex-1" data-kid="1-3-1-2-3-1">
+                    </div>
+                    <p class="f-d text-[20px] tracking-[0.3em]" data-kid="1-3-1-2-3-2">
+                        TMZ-0300
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MENU table -->
+    <section class="px-14 py-20 border-t-[3px] border-[#232424]" data-kid="1-4" id="v2-menu">
+        <div class="flex items-end justify-between" data-kid="1-4-1">
+            <h2 class="f-d font-bold uppercase text-[96px] leading-[0.85]" data-kid="1-4-1-1">
+                Меню
+            </h2>
+            <p class="text-[15px] italic max-w-[320px] text-right" data-kid="1-4-1-2">
+                Все цены в сумах. Можно взять с собой или остаться в зале.
+            </p>
+        </div>
+        <div class="mt-12 grid grid-cols-2 gap-16" data-kid="1-4-2">
+            <div data-kid="1-4-2-1">
+                <div class="flex items-center justify-between border-b-[3px] border-[#232424] pb-2" data-kid="1-4-2-1-1">
+                    <h3 class="f-d font-bold uppercase text-[36px] tracking-wide" data-kid="1-4-2-1-1-1">
+                        Горячие
+                    </h3>
+                    <span class="f-d uppercase tracking-[0.2em] text-[16px]" data-kid="1-4-2-1-1-2">
+                        Цена
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-1-2">
+                    <div data-kid="1-4-2-1-2-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-1-2-1-1">
+                            Espresso
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-1-2-1-2">
+                            одна порция, крепкий
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-1-2-2">
+                        15 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-1-3">
+                    <div data-kid="1-4-2-1-3-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-1-3-1-1">
+                            Americano
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-1-3-1-2">
+                            эспрессо и горячая вода
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-1-3-2">
+                        18 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-1-4">
+                    <div data-kid="1-4-2-1-4-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-1-4-1-1">
+                            Cappuccino
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-1-4-1-2">
+                            самый популярный у гостей
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-1-4-2">
+                        22 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-1-5">
+                    <div data-kid="1-4-2-1-5-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-1-5-1-1">
+                            Latte
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-1-5-1-2">
+                            мягкий, много молока
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-1-5-2">
+                        22 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-1-6">
+                    <div data-kid="1-4-2-1-6-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-1-6-1-1">
+                            Flat White
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-1-6-1-2">
+                            двойной эспрессо, тонкая пена
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#232424] text-[#DEDBD4] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-1-6-2">
+                        30 000
+                    </span>
+                </div>
+            </div>
+            <div data-kid="1-4-2-2">
+                <div class="flex items-center justify-between border-b-[3px] border-[#232424] pb-2" data-kid="1-4-2-2-1">
+                    <h3 class="f-d font-bold uppercase text-[36px] tracking-wide" data-kid="1-4-2-2-1-1">
+                        Холодные
+                    </h3>
+                    <span class="f-d uppercase tracking-[0.2em] text-[16px]" data-kid="1-4-2-2-1-2">
+                        Цена
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-2-2">
+                    <div data-kid="1-4-2-2-2-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-2-2-1-1">
+                            Ice Americano
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-2-2-1-2">
+                            на льду, без молока
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-2-2-2">
+                        25 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-2-3">
+                    <div data-kid="1-4-2-2-3-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-2-3-1-1">
+                            Ice Cappuccino
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-2-3-1-2">
+                            холодная молочная пена
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-2-3-2">
+                        25 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-2-4">
+                    <div data-kid="1-4-2-2-4-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-2-4-1-1">
+                            Ice Latte
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-2-4-1-2">
+                            для жаркого дня в Термезе
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#EB2A2A] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-2-4-2">
+                        25 000
+                    </span>
+                </div>
+                <div class="row-rule flex items-center justify-between py-4" data-kid="1-4-2-2-5">
+                    <div data-kid="1-4-2-2-5-1">
+                        <p class="text-[21px] font-medium" data-kid="1-4-2-2-5-1-1">
+                            Frappuccino
+                        </p>
+                        <p class="text-[14px] italic opacity-75" data-kid="1-4-2-2-5-1-2">
+                            взбитый со льдом
+                        </p>
+                    </div>
+                    <span class="w-[76px] h-[76px] rounded-full bg-[#232424] text-[#DEDBD4] grid place-items-center f-d font-bold text-[24px]" data-kid="1-4-2-2-5-2">
+                        30 000
+                    </span>
+                </div>
+                <img alt="Стакан холодного кофе — Yazid N on Pexels" class="mt-8 w-[150px] h-[150px] rounded-full object-cover ml-auto" data-kid="1-4-2-2-6" decoding="async" loading="lazy" src="https://images.pexels.com/photos/35197215/pexels-photo-35197215.jpeg?auto=compress&cs=tinysrgb&w=700&q=80"/>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES pull quote -->
+    <section class="px-14 py-20" data-kid="1-5">
+        <div class="max-w-[720px] mx-auto text-[18px] leading-[1.8]" data-kid="1-5-1">
+            <p data-kid="1-5-1-1">
+                Мы не обещаем «идеальный кофе». Мы обещаем три вещи, которые можно проверить в любой вечер: зёрна мелются перед каждой чашкой, в зале есть место с ноутбуком, а двери открыты до 03:00 — ежедневно.
+            </p>
+            <div class="sheet -mx-28 my-12 border-y-[3px] border-[#232424] px-16 py-10" data-kid="1-5-1-2">
+                <p class="f-d font-bold uppercase text-[64px] leading-[0.95] text-center" data-kid="1-5-1-2-1">
+                    Помол
+                    <span class="text-[#EB2A2A]" data-kid="1-5-1-2-1-1">
+                        перед каждой
+                    </span>
+                    чашкой. Столы
+                    <span class="text-[#EB2A2A]" data-kid="1-5-1-2-1-2">
+                        для работы
+                    </span>
+                    . Открыто
+                    <span class="text-[#EB2A2A]" data-kid="1-5-1-2-1-3">
+                        до трёх
+                    </span>
+                    .
+                </p>
+                <div class="mt-8 flex justify-center gap-12 f-d uppercase tracking-[0.15em] text-[18px]" data-kid="1-5-1-2-2">
+                    <span class="flex items-center gap-2" data-kid="1-5-1-2-2-1">
+                        <i class="ti ti-coffee text-[#A50F14] text-[22px]" data-kid="1-5-1-2-2-1-1">
+                        </i>
+                        Свежие зёрна
+                    </span>
+                    <span class="flex items-center gap-2" data-kid="1-5-1-2-2-2">
+                        <i class="ti ti-device-laptop text-[#A50F14] text-[22px]" data-kid="1-5-1-2-2-2-1">
+                        </i>
+                        Место для работы
+                    </span>
+                    <span class="flex items-center gap-2" data-kid="1-5-1-2-2-3">
+                        <i class="ti ti-moon text-[#A50F14] text-[22px]" data-kid="1-5-1-2-2-3-1">
+                        </i>
+                        До 03:00
+                    </span>
+                </div>
+            </div>
+            <p data-kid="1-5-1-3">
+                Если нужен тихий угол — просите столик у окна. Если поздно и хочется чего-то холодного — Ice Latte за 25 000 сум.
+            </p>
+        </div>
+    </section>
+    <!-- GALLERY arc fan -->
+    <section class="px-14 pt-16 pb-24 border-t-[3px] border-[#232424]" data-kid="1-6" id="v2-gallery">
+        <div class="flex items-end justify-between" data-kid="1-6-1">
+            <h2 class="f-d font-bold uppercase text-[80px] leading-[0.85]" data-kid="1-6-1-1">
+                Фоторепортаж
+            </h2>
+            <p class="text-[15px] italic" data-kid="1-6-1-2">
+                Чашки, зёрна и зал Coffeemania
+            </p>
+        </div>
+        <div class="relative h-[440px] mt-8" data-kid="1-6-2">
+            <img alt="Кофейные зёрна на газете — Khadijah Karaca on Pexels" class="v2-fan absolute left-[2%] top-[150px] w-[210px] h-[210px] rounded-full object-cover rotate-[-10deg] border-[6px] border-[#E8E5DE]" data-dynamic="true" data-kid="1-6-2-1" data-name="gallery photo 1" data-reason="opacity and position set by animation script" decoding="async" loading="lazy" src="https://images.pexels.com/photos/27993241/pexels-photo-27993241.jpeg?auto=compress&cs=tinysrgb&w=600&q=80"/>
+            <img alt="Солнечный уголок кафе — Gül Işık on Pexels" class="v2-fan absolute left-[20%] top-[50px] w-[240px] h-[240px] rounded-full object-cover rotate-[-5deg] border-[6px] border-[#E8E5DE]" data-dynamic="true" data-kid="1-6-2-2" data-name="gallery photo 2" data-reason="opacity and position set by animation script" decoding="async" loading="lazy" src="https://images.pexels.com/photos/15860796/pexels-photo-15860796.jpeg?auto=compress&cs=tinysrgb&w=600&q=80"/>
+            <img alt="Холодный кофе крупным планом — Nguyễn Tiến Thịnh on Pexels" class="v2-fan absolute left-1/2 -translate-x-1/2 top-0 w-[290px] h-[290px] rounded-full object-cover border-[6px] border-[#E8E5DE]" data-dynamic="true" data-kid="1-6-2-3" data-name="gallery photo 3" data-reason="opacity and position set by animation script" decoding="async" loading="lazy" src="https://images.pexels.com/photos/33666590/pexels-photo-33666590.jpeg?auto=compress&cs=tinysrgb&w=700&q=80"/>
+            <img alt="Современный интерьер — Lisa Fotios on Pexels" class="v2-fan absolute right-[20%] top-[50px] w-[240px] h-[240px] rounded-full object-cover rotate-[5deg] border-[6px] border-[#E8E5DE]" data-dynamic="true" data-kid="1-6-2-4" data-name="gallery photo 4" data-reason="opacity and position set by animation script" decoding="async" loading="lazy" src="https://images.pexels.com/photos/2923415/pexels-photo-2923415.jpeg?auto=compress&cs=tinysrgb&w=600&q=80"/>
+            <img alt="Кофе в стакане — Linda Xu on Unsplash" class="v2-fan absolute right-[2%] top-[150px] w-[210px] h-[210px] rounded-full object-cover rotate-[10deg] border-[6px] border-[#E8E5DE]" data-dynamic="true" data-kid="1-6-2-5" data-name="gallery photo 5" data-reason="opacity and position set by animation script" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1484542959923-de288ec85ce1?auto=format&w=600&q=80&fit=crop"/>
+            <span class="absolute left-1/2 -translate-x-1/2 bottom-6 w-4 h-4 rounded-full bg-[#EB2A2A]" data-kid="1-6-2-6">
+            </span>
+        </div>
+    </section>
+    <!-- REVIEWS editorial -->
+    <section class="px-14 py-20 sheet border-y-[3px] border-[#232424] relative" data-kid="1-7" id="v2-reviews">
+        <i class="ti ti-receipt absolute top-10 right-14 text-[40px] text-[#A50F14]" data-kid="1-7-1">
+        </i>
+        <p class="f-d uppercase tracking-[0.25em] text-[18px] text-[#A50F14]" data-kid="1-7-2">
+            Письма читателей · Google
+        </p>
+        <blockquote class="mt-6 max-w-[1000px]" data-kid="1-7-3">
+            <p class="italic text-[46px] leading-[1.25]" data-kid="1-7-3-1">
+                «Приятная атмосфера, чисто, вкусно и красиво. Особенно понравился капучино.»
+            </p>
+            <footer class="mt-5 f-d uppercase tracking-[0.15em] text-[22px]" data-kid="1-7-3-2">
+                Фаррух · июль 2026
+            </footer>
+        </blockquote>
+        <div class="mt-14 grid grid-cols-3 gap-10 border-t border-[#232424]/40 pt-8" data-kid="1-7-4">
+            <div data-kid="1-7-4-1">
+                <p class="text-[16px] leading-[1.7]" data-kid="1-7-4-1-1">
+                    «Очень уютно, кофе отличный, а персонал доброжелательный. Подходит и для работы, и для встреч.»
+                </p>
+                <p class="mt-3 f-d uppercase tracking-[0.15em] text-[17px]" data-kid="1-7-4-1-2">
+                    Азиза · август 2026
+                </p>
+            </div>
+            <div data-kid="1-7-4-2">
+                <p class="text-[16px] leading-[1.7]" data-kid="1-7-4-2-1">
+                    «Всё по-настоящему качественно: сервис, кофе и интерьер. Рекомендую всем.»
+                </p>
+                <p class="mt-3 f-d uppercase tracking-[0.15em] text-[17px]" data-kid="1-7-4-2-2">
+                    Лола · июнь 2026
+                </p>
+            </div>
+            <div data-kid="1-7-4-3">
+                <p class="text-[16px] leading-[1.7]" data-kid="1-7-4-3-1">
+                    «Отличное место для отдыха вечером. Нравится, что рядом с центром и открыто до позднего времени.»
+                </p>
+                <p class="mt-3 f-d uppercase tracking-[0.15em] text-[17px]" data-kid="1-7-4-3-2">
+                    Ильхом · май 2026
+                </p>
+            </div>
+        </div>
+        <a class="mt-10 inline-flex items-center gap-2 f-d uppercase tracking-[0.15em] text-[20px] text-[#A50F14] underline underline-offset-4" data-kid="1-7-5" href="https://maps.google.com/?q=67RJ+GQW,+Termiz" target="_blank">
+            Все отзывы на Google · 5.0
+            <i class="ti ti-arrow-up-right" data-kid="1-7-5-1">
+            </i>
+        </a>
+    </section>
+    <!-- CONTACTS map-list -->
+    <section class="grid grid-cols-2 min-h-[560px]" data-kid="1-8" id="v2-contacts">
+        <div class="relative border-r-[3px] border-[#232424]" data-kid="1-8-1">
+            <iframe class="absolute inset-0 w-full h-full grayscale-[0.4] sepia-[0.15]" data-kid="1-8-1-1" loading="lazy" src="https://www.google.com/maps?q=67RJ%2BGQW+Termiz&z=16&output=embed" style="border:0" title="Карта Coffeemania">
+            </iframe>
+        </div>
+        <div class="px-14 py-16" data-kid="1-8-2">
+            <h2 class="f-d font-bold uppercase text-[80px] leading-[0.85]" data-kid="1-8-2-1">
+                Как добраться
+            </h2>
+            <p class="mt-4 text-[17px]" data-kid="1-8-2-2">
+                Центр Термеза, Surxondaryo Viloyati. Код Google Plus: 67RJ+GQW.
+            </p>
+            <div class="stub mt-10 px-8 py-6" data-kid="1-8-2-3">
+                <div class="flex justify-between py-3 row-rule" data-kid="1-8-2-3-1">
+                    <span class="f-d uppercase tracking-[0.15em] text-[18px]" data-kid="1-8-2-3-1-1">
+                        Часы
+                    </span>
+                    <span class="text-[17px]" data-kid="1-8-2-3-1-2">
+                        ежедневно 08:00–03:00
+                    </span>
+                </div>
+                <div class="flex justify-between py-3 row-rule" data-kid="1-8-2-3-2">
+                    <span class="f-d uppercase tracking-[0.15em] text-[18px]" data-kid="1-8-2-3-2-1">
+                        Телефон
+                    </span>
+                    <a class="text-[17px] font-medium" data-kid="1-8-2-3-2-2" href="tel:+998907479037">
+                        90 747 90 37
+                    </a>
+                </div>
+                <div class="flex justify-between py-3" data-kid="1-8-2-3-3">
+                    <span class="f-d uppercase tracking-[0.15em] text-[18px]" data-kid="1-8-2-3-3-1">
+                        Средний чек
+                    </span>
+                    <span class="text-[17px]" data-kid="1-8-2-3-3-2">
+                        до 50 000 сум
+                    </span>
+                </div>
+            </div>
+            <div class="perf my-8" data-kid="1-8-2-4">
+            </div>
+            <div class="flex gap-4" data-kid="1-8-2-5">
+                <a class="bg-[#EB2A2A] hover:bg-[#c81f1f] f-d uppercase text-[24px] tracking-wider px-8 py-3 rounded-full flex items-center gap-3" data-kid="1-8-2-5-1" href="https://maps.google.com/?q=67RJ+GQW,+Termiz" target="_blank">
+                    <i class="ti ti-route" data-kid="1-8-2-5-1-1">
+                    </i>
+                    Построить маршрут
+                </a>
+                <a class="border-2 border-[#232424] hover:bg-[#232424] hover:text-[#DEDBD4] f-d uppercase text-[24px] tracking-wider px-8 py-3 rounded-full flex items-center gap-3" data-kid="1-8-2-5-2" href="tel:+998907479037">
+                    <i class="ti ti-phone" data-kid="1-8-2-5-2-1">
+                    </i>
+                    Позвонить
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#232424] text-[#DEDBD4] px-14 py-8 flex items-center justify-between" data-kid="1-9">
+        <p class="f-d uppercase tracking-[0.2em] text-[18px]" data-kid="1-9-1">
+            © 2026 Coffeemania · Термез
+        </p>
+        <a class="f-d text-[24px]" data-kid="1-9-2" href="tel:+998907479037">
+            90 747 90 37
+        </a>
+    </footer>
+</div>
+<script type="module">
+    import { animate, stagger } from 'https://esm.sh/animejs@4';
+const OPEN=8, CLOSE=3; // время открытия — предположение
+const now=new Date();
+const [h,m]=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Tashkent',hour:'2-digit',minute:'2-digit',hour12:false}).format(now).split(':').map(Number);
+const isOpen=(h%24)>=OPEN||(h%24)<CLOSE;
+const w=document.getElementById('v2-stub-word'),n=document.getElementById('v2-stub-note');
+if(isOpen){w.textContent='Открыто';n.textContent='закроемся в 03:00';}
+else{w.textContent='Закрыто';w.style.color='#232424';n.textContent='откроемся в 08:00';}
+document.getElementById('v2-date').textContent='Термез · '+new Intl.DateTimeFormat('ru-RU',{timeZone:'Asia/Tashkent',day:'numeric',month:'long',weekday:'long'}).format(now);
+animate('.v2-fan',{opacity:[0,1],translateY:[40,0],delay:stagger(90),duration:700,ease:'out(4)'});
+</script>
+</div>
+</body></html>
